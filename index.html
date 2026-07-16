@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="id" data-bs-theme="auto">
+
+<head>
+    <!-- Common Tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+portofolio dhimgobed
+</title>
+
+    <!-- SEO Tag -->
+    <meta name="author" content="dhimgobed">
+    <meta name="language" content="id">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow, max-image-preview:large">
+    <meta name="title" content="DhimGobed web">
+    <meta name="description" content="
+website pribadi dhimgobed
+">
+    <meta name="keywords" content="undangan, wedding, undangan digital, undangan online, wedding invitation, template undangan, template undangan pernikahan, undangan pernikahan, template undangan online, wedding invitation github, template website, template website undangan pernikahan">
+    <meta property="og:title" content="Website Undangan Pernikahan Wahyu dan Riski Secara Online">
+    <meta property="og:description" content="Website Undangan Pernikahan Wahyu dan Riski Secara Online">
+    <meta property="og:keywords" content="undangan, wedding, undangan digital, undangan online, wedding invitation, template undangan, template undangan pernikahan, undangan pernikahan, template undangan online, wedding invitation github, template website, template website undangan pernikahan">
+    <meta property="og:image" content="https://ulems.my.id/assets/images/bg.webp">
+    <meta property="og:image:secure_url" content="https://ulems.my.id/assets/images/bg.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:alt" content="Website Undangan Pernikahan Wahyu dan Riski Secara Online">
+    <meta property="og:image:width" content="980">
+    <meta property="og:image:height" content="980">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:url" content="https://ulems.my.id">
+    <meta property="og:site_name" content="Website Undangan Pernikahan Wahyu dan Riski Secara Online">
+
+    <!-- Appearance -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Website Undangan Pernikahan Wahyu dan Riski Secara Online">
+    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="dark light">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="canonical" href="https://ulems.my.id/">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://ulems.my.id/assets/images/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="https://ulems.my.id/assets/images/icon-192x192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Honk:MORF@15&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <style>
+.icon-head {
+margin: top;
+padding: 5px 5px;
+font-size: 10px;
+color: white;
+}
+.icon-head-img {
+width: 10px;
+height: 10px;
+border-radius: 10%;
+justify-content: right;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+height: 100%;
+width: 100%;
+            margin: 0;
+	   
+        }
+.bungkus {
+justify-content: center;
+padding: 30px;
+margin: 20px;
+text-align: center;
+}
+        .jam-box {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#tanggal {
+font-size: 10px;
+color: white;
+}
+    </style>
+</head>
+<body>
+
+<div class="bungkus">
+<div class="jam-box" id="jam"></div>
+<div id="tanggal" ></div>
+<small class="icon-head">Indosat Oredoo</small>
+<img src="signal.png" class="icon-head-img">
+<nav class="navbar">
+                <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about.html">Tentang</a></li>
+                        <li><a href="#">Produk</a></li>
+                        <li><a href="#">Layanan</a></li>
+                        <li><a href="https://wa.me/6285536484701">Kontak Kami</a></li>
+                </ul>
+
+
+                <div class="tombol">
+<div class="container">VISIT</div>
+                </div>
+
+</nav>
+</div>
+   <script>
+        function tampilkanJam() {
+            const waktu = new Date();
+            // Mengambil jam, menit, dan detik
+            let jam = waktu.getHours();
+            let menit = waktu.getMinutes();
+            let detik = waktu.getSeconds();
+
+            // Tambahkan angka 0 di depan jika nilai kurang dari 10
+            jam = jam < 10 ? "0" + jam : jam;
+            menit = menit < 10 ? "0" + menit : menit;
+
+            // Gabungkan menjadi format HH:MM:SS
+            const waktuSekarang = jam + ":" + menit;
+
+            // Tampilkan ke elemen HTML
+            document.getElementById("jam").innerHTML = waktuSekarang;
+        }
+
+        // Perbarui jam setiap 1000 milidetik (1 detik)
+        setInterval(tampilkanJam, 60000);
+        
+        // Panggil fungsi sekali agar jam langsung muncul saat halaman dimuat
+        tampilkanJam();
+    </script>
+<script>
+        // Fungsi untuk menampilkan hari dan tanggal
+        function tampilkanTanggal() {
+            const hariArray = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+            const bulanArray = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+
+            const date = new Date();
+            const hari = hariArray[date.getDay()];
+            const tanggal = date.getDate();
+            const bulan = bulanArray[date.getMonth()];
+            const tahun = date.getFullYear();
+
+            // Gabungkan menjadi format: Hari, Tanggal Bulan Tahun
+            const hasilTanggal = `${hari}, ${tanggal} ${bulan} ${tahun}`;
+
+            // Masukkan ke dalam elemen HTML
+            document.getElementById('tanggal').textContent = hasilTanggal;
+        }
+
+        // Panggil fungsi saat halaman dimuat
+        tampilkanTanggal();
+    </script>
+<script type="text/javascript">
+		// deklarasi tombol dan menu
+		const tombol = document.querySelector('.tombol');
+		const menu = document.querySelector('.menu');
+ 
+		// membuat event click
+		// pada saat tombol di click, tambahkan class aktif pada class menu
+		// saat diklik lagi, maka class aktif dihilangkan dari class menu (toggle)
+		tombol.addEventListener('click', () => {
+			menu.classList.toggle('aktif');
+		});
+	</script>
+</body>
+</html>

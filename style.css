@@ -1,0 +1,82 @@
+.navbar{
+	margin: 0;
+	padding: 20px 30px;
+}
+ 
+.logo{
+	font-size: 14pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+.container{
+
+background-color: black;
+opacity: 0.6;
+border-radius: 10px;
+border: 1px solid white;
+	display: flex;
+	justify-content: center;
+        
+}
+ 
+.tombol{
+	display: none;
+	color: white;
+	font-size: 20px;			
+font-weight: bold;
+text-decoration: none;
+}
+ 
+.tombol:hover{
+	cursor: pointer;
+}
+ 
+ 
+.menu{
+	margin: 0;
+	display: flex;
+	list-style: none;
+	padding: 0;			
+}
+ 
+.menu li{
+	padding-left: 0;
+	margin-right: 10px;
+}
+ 
+.menu li a{
+	padding:10px;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+ 
+ 
+@media screen and (max-width: 768px) {
+	.menu {
+		display: none;
+	}
+ 
+	.menu.aktif {
+background-color: black;
+opacity: 0.6;
+border-radius: 10px;
+border: 1px solid white;
+		position: absolute;
+display: inline-block;
+top: 200px;
+		padding: 10px 20px;
+		right: 0;
+		left: 0;
+	}
+ 
+	.menu.aktif li a {
+		padding: 10px;
+		display: inline-block !important;
+	}
+ 
+	.tombol {
+		display: block;
+	}
+}
