@@ -1,0 +1,91 @@
+
+ 
+.logo{
+	font-size: 14pt;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+/*.container{
+	padding: 30px
+	color: black;
+	font-size: 30px;			
+font-weight: bold;
+	background-color: #ffffff9e;
+    border: 1px solid #ffffff9e;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+            margin: 0;
+            padding: 0;
+            border-radius: 5px;
+box-shadow: 5px 5px 15px 20px rgba(0, 0, 0, 0.20);
+	display: flex;
+	*/
+        
+}
+ 
+.tombol {
+	display: none;
+text-decoration: none;
+	
+}
+ 
+.tombol:hover{
+	cursor: pointer;
+	}
+ 
+ 
+.menu{
+	margin: 20px;
+	display: flex;
+	list-style: none;
+	padding: 0;			
+	align-items: center;
+}
+ 
+.menu li{
+	padding-left: 0;
+}
+ 
+@media screen and (max-width: 768px) {
+	.menu {
+		display: none;
+		align-items: center;
+	}
+ 
+	.menu.aktif {
+/*background-color: black;
+opacity: 0.6;
+border-radius: 10px;
+border: 1px solid white;*/
+display: inline-block;
+		right: 0;
+		left: 0;
+		align-items: center;
+		
+	}
+ 
+	.menu.aktif li a {
+		
+		display: inline-block !important;
+	}
+ 
+	.tombol {
+		display: block;
+		justify-content: center;
+		margin: 0;
+	font-size: 15px;			
+		color: white;
+font-weight: bold;
+	border-radius: 20%;
+		border: 1px solid #ffffff9e;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   
+		backdrop-filter: blur(0.1px);
+    -webkit-backdrop-filter: blur(0.1px);
+		margin: 20px;
+		padding: 5px;
+	}
+
